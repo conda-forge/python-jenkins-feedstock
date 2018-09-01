@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
 
 requirements:
@@ -32,7 +32,7 @@ test:
 
 about:
   home: http://git.openstack.org/cgit/openstack/python-jenkins
-  license: BSD
+  license: BSD-3-Clause
   license_family: BSD
   license_file: COPYING
   summary: Python Jenkins is a python wrapper for the Jenkins REST API
