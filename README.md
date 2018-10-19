@@ -3,7 +3,7 @@ About python-jenkins
 
 Home: http://git.openstack.org/cgit/openstack/python-jenkins
 
-Package license: BSD
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
