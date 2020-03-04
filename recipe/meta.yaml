@@ -1,18 +1,18 @@
 {% set name = "python-jenkins" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 20001e3e090638bff587eb3cd34efbc5e35bfea3d3ae26796cf6b54fbfcd46a9
+  sha256: deed8fa79d32769a615984a5dde5e01eda04914d3f4091bd9a23d30474695106
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
