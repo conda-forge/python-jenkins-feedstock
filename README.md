@@ -5,11 +5,9 @@ Home: http://git.openstack.org/cgit/openstack/python-jenkins
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-jenkins-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python Jenkins is a python wrapper for the Jenkins REST API
-
-
 
 Current build status
 ====================
