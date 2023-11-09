@@ -1,5 +1,5 @@
 {% set name = "python-jenkins" %}
-{% set version = "1.8.1" %}
+{% set version = "1.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ff5f1d92539d903f869b02eaf2b1314447e6d6d78f767edcfdd92967d532b9c6
+  sha256: 56e7dabb0607bdb8e1d6fc6d2d4301abedbed9165da2b206facbd3071cb6eecb
 
 build:
   noarch: python
