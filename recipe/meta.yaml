@@ -1,17 +1,17 @@
 {% set name = "python-jenkins" %}
-{% set version = "1.8.2" %}
+{% set version = "1.8.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 56e7dabb0607bdb8e1d6fc6d2d4301abedbed9165da2b206facbd3071cb6eecb
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 8f4761c391ac11e8c1f23f771010920c10440497705ab7175d52358f5a12dc98
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
